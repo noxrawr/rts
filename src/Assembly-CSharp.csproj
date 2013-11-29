@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_2_2;UNITY_4_2;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>D:/unity3d/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>D:/unity3d/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\AstarPathfindingProject\Core\AI\AIPath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AI\NavmeshController.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AI\Seeker.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AstarData.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AstarMath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AstarPath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\GraphUpdateScene.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\GraphUpdateShape.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\AstarDebugger.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\BinaryHeap.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\GraphEditorBase.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\GraphModifier.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\Int3.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\ListPool.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\PathPool.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\StackPool.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\MultithreadClasses.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Node.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\NodeLink.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Path.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Serialization\GraphLoaderHistory\AstarSerialize.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Serialization\GraphLoaderHistory\AstarSerializer3_01.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Serialization\GraphLoaderHistory\AstarSerializer3_04.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Serialization\GraphLoaderHistory\AstarSerializer3_05.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Serialization\GraphLoaderHistory\AstarSerializer3_07.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Serialization\JsonConverters.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Serialization\JsonSerializer.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\astarclasses.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\Example2_Terrain\hum.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\AIFollow.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\DoorController.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\DynamicGridObstacle.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\MineBotAI.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\ObjectPlacer.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\TargetMover.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\Prefabs\NewBehaviourScript.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Base.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\GridGenerator.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\NavMeshGenerator.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\NodeClasses\GridNode.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\NodeClasses\MeshNode.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\PointGenerator.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\BBTree.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\NavMeshRenderer.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\ObjImporter.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\AlternativePath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\FunnelModifier.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\Modifiers.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\RaycastModifier.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\SimpleSmoothModifier.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\StartEndModifier.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Pathfinders\ABPath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\AstarChecksum.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\AstarMemory.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\AstarParallel.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\AstarProfiler.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\DotNetReplacements.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\GraphUpdateUtilities.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\LockFreeStack.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\PathUtilities.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\SizeProfiler.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\changelog.cs" />
+     <Compile Include="Assets\RVO2\Agent.cs" />
+     <Compile Include="Assets\RVO2\KdTree.cs" />
+     <Compile Include="Assets\RVO2\Line.cs" />
+     <Compile Include="Assets\RVO2\Obstacle.cs" />
+     <Compile Include="Assets\RVO2\RVOMath.cs" />
+     <Compile Include="Assets\RVO2\Simulator.cs" />
+     <Compile Include="Assets\RVO2\Vector2.cs" />
+     <Compile Include="Assets\UnitStates\Move.cs" />
+     <Compile Include="Assets\UnitStates\StateManager.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\AutonomousVehicle.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\Biped.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\DetectableObject.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\DetectableObjectCreator.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\Examples\SteerForPathPredictiveTrivial.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\Examples\SteerForPathTrivial.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\PassiveVehicle.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\Radar.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\Speedometer.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SphericalObstacleData.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForAlignment.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForCharacterEvasion.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForCohesion.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForEvasion.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForFear.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForForward.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForMinimumSpeed.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForNavmesh.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForNeighborGroup.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForNeighbors.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForPathSimplified.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForPoint.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForPursuit.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForSeparation.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForSpeed.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForSpeedFluctuation.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForSphericalObstacleAvoidance.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForSphericalObstacleRepulsion.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForTarget.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForTether.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerForWander.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\SteerToFollow.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\Steering.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\TickedVehicle.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\Vehicle.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Behaviors\VehicleLookAtOverride.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Helpers\IRadarReceiver.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Helpers\RandomizeStartPosition.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Helpers\SteeringEvent.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\IPathway.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\OpenSteerUtility.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\PathWay.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\TickedPriorityQueue\UnityTickedQueue.cs" />
+     <Compile Include="Assets\UnitySteer-2.7\Vector3Pathway.cs" />
+     <Compile Include="Assets\scriptsMain\Cam.cs" />
+     <Compile Include="Assets\scriptsMain\MathHelper.cs" />
+     <Compile Include="Assets\scriptsMain\ObjectManager.cs" />
+     <Compile Include="Assets\scriptsMain\SelectionManager.cs" />
+     <Compile Include="Assets\units\Buildings\Building.cs" />
+     <Compile Include="Assets\units\Customobject.cs" />
+     <Compile Include="Assets\units\Unit\Unit.cs" />
+     <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh2.shader" />
+     <None Include="Assets\UnitySteer-2.7\License.txt" />
+     <None Include="Assets\UnitySteer-2.7\TickedPriorityQueue\LICENSE.txt" />
+     <None Include="Assets\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
+     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
+     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
+     <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
+     <None Include="Assets\AstarPathfindingProject\Plugins\dependencies.txt" />
+     <None Include="Assets\AstarPathfindingProject\ExampleScenes\_Example Scenes.txt" />
+     <None Include="Assets\AstarPathfindingProject\Readme_upgrading.txt" />
+     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\Projector Light.shader" />
+     <None Include="Assets\Readme.txt" />
+     <None Include="Assets\AstarPathfindingProject\Readme.txt" />
+     <None Include="Assets\AstarPathfindingProject\Plugins\JsonFx\License.txt" />
+     <None Include="Assets\AstarPathfindingProject\Plugins\JsonFx\Readme.txt" />
+     <None Include="Assets\AstarPathfindingProject\link.xml" />
+ <Reference Include="Ionic.Zip.Reduced">
+ <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Ionic.Zip.Reduced.dll</HintPath>
+ </Reference>
+ <Reference Include="JsonFx.Json">
+ <HintPath>Assets\AstarPathfindingProject\Plugins\JsonFx\JsonFx.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="TickedPriorityQueue">
+ <HintPath>Assets\UnitySteer-2.7\TickedPriorityQueue\TickedPriorityQueue.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
