@@ -37,4 +37,16 @@ public static class MathHelper {
         
         return clampedRect;
     }
+
+	public static bool isWithinRadius(Vector3 center, float radius, Vector3 position)
+	{
+		float distance =  Vector3.Distance(center, position);
+
+		if(distance < radius) {
+			//Debug.Log (distance);
+			//Debug.Log ("pos: " + position + " center:" + center);
+			return true;
+		}
+		return false;
+	}
 }

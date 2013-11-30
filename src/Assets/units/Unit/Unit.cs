@@ -166,7 +166,7 @@ public class Unit : Customobject {
                 //m.executeMove(path[pathIndex] , currentVelocity, this, turnRate, center);
                 m.seek(path[pathIndex] , currentVelocity, this, turnRate, center, isLastNode);
                 //m.executeMove(rvoPath , currentVelocity, this, turnRate);
-                if(delta < 3) {
+                if(delta < 18) {
                     //Debug.Log (path.Length);
                     if(pathIndex == path.Length -1) {
                         followPath = false;
@@ -209,7 +209,7 @@ public class Unit : Customobject {
     private void OnGUI()
     {
         Vector3 loc = Vector3.zero;
-        Vector3 screenPos3 = Camera.main.WorldToScreenPoint(transform.position + currentVel * 150);
+        Vector3 screenPos3 = Camera.main.WorldToScreenPoint(transform.position + currentVel * 250);
     
         GUI.color = new Color(1,1,1,1.0f);
         GUI.DrawTexture (new Rect(screenPos3.x -4 ,Screen.height - screenPos3.y -2, 4, 4), selectBoxTexture);

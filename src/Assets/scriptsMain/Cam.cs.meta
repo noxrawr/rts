@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 2e42e9d6f065a0743b78742e2a6faf57
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - selectBoxMat: {instanceID: 0}
+  - aTexture: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
